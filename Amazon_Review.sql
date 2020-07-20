@@ -1,4 +1,4 @@
--- Statistical summary of vine_table --
+---- Statistical summary of vine_table ----
 SELECT vine 
 	, COUNT(*) 
 	, CAST(AVG(star_rating) AS DECIMAL(10,2)) AS avg_star_rating
@@ -10,7 +10,7 @@ SELECT vine
 FROM vine_table
 GROUP BY vine;
 
--- Statistical summary of vine_table for 5 star_rating --
+---- Statistical summary of vine_table for 5 star_rating ----
 SELECT  v.vine 
 	, COUNT(*) 
 	, CAST(AVG(star_rating) AS DECIMAL(10,2)) AS avg_star_rating
